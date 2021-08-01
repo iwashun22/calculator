@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+   <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <div class="calculator">
+      <table>
+         <tbody>
+            <tr>
+               <td colspan="4">
+                  <div class="output-area" id="result-output">0</div>
+               </td>
+            </tr>
+
+            <tr>
+               <td><button class="button operator" id="square-root">√</button></td>
+               <td><button class="button operator" id="percent">%</button></td>
+               <td><button class="button operator" id="multiplication-button">×</button></td>
+               <td><button class="button operator" id="division-button">÷</button></td>
+            </tr>
+
+            <tr>
+               <td><button class="button" id="seven-button">7</button></td>
+               <td><button class="button" id="eight-button">8</button></td>
+               <td><button class="button" id="nine-button">9</button></td>
+               <td><button class="button operator" id="addition-button">+</button></td>
+            </tr>
+
+            <tr>
+               <td><button class="button" id="four-button">4</button></td>
+               <td><button class="button" id="five-button">5</button></td>
+               <td><button class="button" id="six-button">6</button></td>
+               <td><button class="button operator" id="subtraction-button">−</button></td>
+            </tr>
+
+            <tr>
+               <td><button class="button" id="one-button">1</button></td>
+               <td><button class="button" id="two-button">2</button></td>
+               <td><button class="button" id="three-button">3</button></td>
+               <td rowspan="2"><button class="button result-button operator" id="equal-button">=</button></td>
+            </tr>
+
+            <tr>
+               <td><button class="button clear" id="clear-button">𝐂</button></td>
+               <td><button class="button" id="zero-button">0</button></td>
+               <td><button class="button decimal" id="decimal-button">∙</button></td>
+            </tr>
+
+         </tbody>
+      </table>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>

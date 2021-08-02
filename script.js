@@ -57,6 +57,12 @@ function removeZeroIfNoDecimalPlace(){
    }
 }
 
+function removeText(){
+   if(resultScreen.innerText.includes('Infinity') || resultScreen.innerText.includes('NaN') || resultScreen.innerText.includes('undefined')){
+      resultScreen.innerText = '';
+   }
+}
+
 let zeroInfront;
 function checkDecimalAndZero(){
    let arr = [];
@@ -174,6 +180,7 @@ const squareRoot = () => {
 // working with numbers //
 const addOne = () => {
    removeZeroIfNoDecimalPlace();
+   removeText();
    let a = resultScreen.innerText.charAt(resultScreen.innerText.length - 1);
    if(a !== '%' && a!== 'x'){
       resultScreen.innerText = `${resultScreen.innerText}1`;
@@ -183,6 +190,7 @@ const addOne = () => {
 }
 const addTwo = () => {
    removeZeroIfNoDecimalPlace();
+   removeText();
    let a = resultScreen.innerText.charAt(resultScreen.innerText.length - 1);
    if(a !== '%' && a!== 'x'){
       resultScreen.innerText = `${resultScreen.innerText}2`;
@@ -192,6 +200,7 @@ const addTwo = () => {
 }
 const addThree = () => {
    removeZeroIfNoDecimalPlace();
+   removeText();
    let a = resultScreen.innerText.charAt(resultScreen.innerText.length - 1);
    if(a !== '%' && a!== 'x'){
       resultScreen.innerText = `${resultScreen.innerText}3`;
@@ -201,6 +210,7 @@ const addThree = () => {
 }
 const addFour = () => {
    removeZeroIfNoDecimalPlace();
+   removeText();
    let a = resultScreen.innerText.charAt(resultScreen.innerText.length - 1);
    if(a !== '%' && a!== 'x'){
       resultScreen.innerText = `${resultScreen.innerText}4`;
@@ -210,6 +220,7 @@ const addFour = () => {
 }
 const addFive = () => {
    removeZeroIfNoDecimalPlace();
+   removeText();
    let a = resultScreen.innerText.charAt(resultScreen.innerText.length - 1);
    if(a !== '%' && a!== 'x'){
       resultScreen.innerText = `${resultScreen.innerText}5`;
@@ -219,6 +230,7 @@ const addFive = () => {
 }
 const addSix = () => {
    removeZeroIfNoDecimalPlace();
+   removeText();
    let a = resultScreen.innerText.charAt(resultScreen.innerText.length - 1);
    if(a !== '%' && a!== 'x'){
       resultScreen.innerText = `${resultScreen.innerText}6`;
@@ -228,6 +240,7 @@ const addSix = () => {
 }
 const addSeven = () => {
    removeZeroIfNoDecimalPlace();
+   removeText();
    let a = resultScreen.innerText.charAt(resultScreen.innerText.length - 1);
    if(a !== '%' && a!== 'x'){
       resultScreen.innerText = `${resultScreen.innerText}7`;
@@ -237,6 +250,7 @@ const addSeven = () => {
 }
 const addEight = () => {
    removeZeroIfNoDecimalPlace();
+   removeText();
    let a = resultScreen.innerText.charAt(resultScreen.innerText.length - 1);
    if(a !== '%' && a!== 'x'){
       resultScreen.innerText = `${resultScreen.innerText}8`;
@@ -246,6 +260,7 @@ const addEight = () => {
 }
 const addNine = () => {
    removeZeroIfNoDecimalPlace();
+   removeText();
    let a = resultScreen.innerText.charAt(resultScreen.innerText.length - 1);
    if(a !== '%' && a!== 'x'){
       resultScreen.innerText = `${resultScreen.innerText}9`;
@@ -267,6 +282,7 @@ const addZero = () => {
    }
    */
    removeZeroIfNoDecimalPlace();
+   removeText();
    let a = resultScreen.innerText.charAt(resultScreen.innerText.length - 1);
    if(a !== '%' && a!== 'x'){
       resultScreen.innerText = `${resultScreen.innerText}0`;
@@ -486,3 +502,4 @@ function calculateRoot(){
       }
    }
 }
+

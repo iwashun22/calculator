@@ -4,15 +4,15 @@
 }
 
 body{
-   width: 400px;
-   height: 500px;
+   width: 390px;
+   height: 400px;
    margin: auto;
    margin-top: 70px;
 }
 
 .calculator{
-   width: 390px;
-   height: 420px;
+   width: 100%;
+   height: 100%;
    margin: auto;
    border: 3px blue solid;
    border-radius: 12px;
@@ -70,7 +70,79 @@ body{
 
 .clear{ border-color: red; }
 
-
 .result-button{
-   height: 95px;
+   height: 92px;
+}
+
+@media only screen and (min-width: 414px){
+   body{
+      width: 300px;
+      height: 370px;
+   }
+   
+   .button{
+      width: 56px;
+      height: 37px;
+      font-size: 17px;
+      margin: 3px 3px;
+   }
+
+   .result-button{
+      height: 86px;
+   }
+
+   .output-area{
+      font-size: 27px;
+      height: 45px;
+      width: 230px;
+   }
+}
+
+@media only screen and (min-width: 375px){
+   body{
+      width: 300px;
+      height: 370px;
+   }
+   
+   .button{
+      width: 56px;
+      height: 37px;
+      font-size: 17px;
+      margin: 3px 3px;
+   }
+
+   .result-button{
+      height: 86px;
+   }
+
+   .output-area{
+      font-size: 27px;
+      height: 45px;
+      width: 230px;
+   }
+}
+
+@media only screen and (min-width: 768px){
+   body{
+      margin-top: 130px;
+      width: 390px;
+      height: 400px;
+   }
+   
+   .button{
+      font-size: 20px;
+      width: 70px;
+      height: 40px;
+      margin: 5px;
+   }
+
+   .result-button{
+      height: 92px;
+   }
+   
+   .output-area{
+      font-size: 30px;
+      width: 240px;
+      height: 55px;
+   }
 }
